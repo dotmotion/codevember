@@ -1,4 +1,4 @@
-var x, y, speed, vx, vy, limitX, limitY;
+var x, y, speed, vx, vy, limitX, limitY, offSet, offSet2;
 
 function setup() {
   createCanvas(400, 400);
@@ -18,14 +18,28 @@ function setup() {
 
   ly1 = y + limitY;
   ly2 = y - limitY;
+
+  offSet = 0;
+  offSet2 = 255;
+  background(22, 25, 27);
+  frameRate(70);
+  colorMode(HSB, 255);
 }
 
 function draw() {
-  background(22, 25, 27, 25);
-  fill(255, 200);
-  stroke(255, 20);
-  strokeWeight(3);
+  fill(offSet, 255, 200, 115);
+  stroke(offSet2, 255, 200, 115);
   ellipse(x, y, 50, 50);
+
+  offSet++;
+  offSet2--;
+
+  if (offSet > 255) {
+    offSet = 0;
+  }
+  if (offSet2 < 0) {
+    offSet2 = 255;
+  }
 
   if (x <= lx2 || x >= lx1) {
     vx = -vx;
