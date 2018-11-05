@@ -26,25 +26,25 @@ function sevenSegment(val) {
   noFill();
   // A
   fill(getColor(val, 6));
-  rect(60, 20, 78, 18, 10, 10);
+  rect(161, 58, 78, 18, 10, 10);
   // B
   fill(getColor(val, 5));
-  rect(140, 40, 18, 98, 10, 10);
+  rect(241, 78, 18, 98, 10, 10);
   // C
   fill(getColor(val, 4));
-  rect(140, 160, 18, 98, 10, 10);
+  rect(241, 198, 18, 98, 10, 10);
   // D
   fill(getColor(val, 3));
-  rect(60, 260, 78, 18, 10, 10);
+  rect(161, 298, 78, 18, 10, 10);
   // E
   fill(getColor(val, 2));
-  rect(40, 160, 18, 98, 10, 10);
+  rect(141, 198, 18, 98, 10, 10);
   // F
   fill(getColor(val, 1));
-  rect(40, 40, 18, 98, 10, 10);
-  // A
+  rect(141, 78, 18, 98, 10, 10);
+  // G
   fill(getColor(val, 0));
-  rect(60, 140, 78, 18, 10, 10);
+  rect(161, 178, 78, 18, 10, 10);
 
   pop();
 }
