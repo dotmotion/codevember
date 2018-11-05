@@ -1,7 +1,7 @@
 var x, y, speed, vx, vy, limitX, limitY;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(400, 400);
   x = width / 2;
   y = height / 2;
 
@@ -10,8 +10,8 @@ function setup() {
   vx = speed;
   vy = speed;
 
-  limitX = 200;
-  limitY = 100;
+  limitX = 100;
+  limitY = 50;
 
   lx1 = x + limitX;
   lx2 = x - limitX;
@@ -21,9 +21,10 @@ function setup() {
 }
 
 function draw() {
-  background(22, 25, 27, 30);
-  fill(255, 255, 255, 150);
-  noStroke();
+  background(22, 25, 27, 25);
+  fill(255, 200);
+  stroke(255, 20);
+  strokeWeight(3);
   ellipse(x, y, 50, 50);
 
   if (x <= lx2 || x >= lx1) {
