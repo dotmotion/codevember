@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 19px;
+}
+
 .header {
   width: 100%;
   display: flex;
