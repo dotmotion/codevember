@@ -3,19 +3,21 @@
 body {
   font-family: "Roboto Mono", monospace;
   font-size: 19px;
+  background: #16191b;
+  color: #e2e6e8;
 }
 
-.header {
+header {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container {
+main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -23,5 +25,12 @@ iframe {
   width: 400px;
   height: 400px;
   overflow: hidden;
-  padding: 1rem;
+  margin: 0.5rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
