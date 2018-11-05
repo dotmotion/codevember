@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(22, 25, 27);
   sevenSegment(nums[index]);
   index = (index + 1) % nums.length;
 }
