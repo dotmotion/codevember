@@ -19,10 +19,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 2rem;
 }
 
 .frame {
   margin: 0.5rem;
+  width: 400px;
 }
 
 span {
