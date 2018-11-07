@@ -21,11 +21,22 @@ main {
   align-items: center;
 }
 
+.frame {
+  margin: 0.5rem;
+}
+
+span {
+  color: #9fa2a3;
+}
+
+h3 {
+  margin: 0;
+}
+
 iframe {
   width: 400px;
   height: 400px;
   overflow: hidden;
-  margin: 0.5rem;
 }
 
 footer {
